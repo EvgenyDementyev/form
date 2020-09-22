@@ -5,6 +5,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
 }
 
 input {
+    width: 200px;
     display: block;
     padding: .375rem .75rem;
     margin: 1rem;
@@ -28,4 +30,30 @@ input {
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.searchContainer {
+    position: relative;
+}
+
+.searchResult {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    width: 224px;
+    border: 1px solid #ced4da; 
+    border-radius: .25rem;
+}
+
+.searchResult div p {
+    margin: 0;
+    padding: 1rem;
+    /* border: 1px solid #ced4da; */
+}
+
+.searchResult div p:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
 }
