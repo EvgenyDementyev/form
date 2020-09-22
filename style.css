@@ -50,10 +50,83 @@ input {
 .searchResult div p {
     margin: 0;
     padding: 1rem;
-    /* border: 1px solid #ced4da; */
 }
 
 .searchResult div p:hover {
     cursor: pointer;
     background-color: whitesmoke;
+}
+
+.actionBar {
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.saveButton {
+    background-color: #28a745;
+    border-color: #28a745;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.saveButton:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.clearButton {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.clearButton:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.toast {
+    position: absolute;
+    top: -120px;
+    left: calc(50% - 170px);
+    width: 300px;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: large;
+    background-color: rgba(95, 217, 95, 0.5);
+    color: #025905;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.showToast {
+    top: 20px;
+    opacity: 1;
 }

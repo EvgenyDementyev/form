@@ -2,10 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <title>Test</title>
+        <title>Form</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div class="toast" id="toast">The form was saved successfully!</div>
+
         <div class="container">
             <div class="searchContainer">
                 <input
@@ -14,6 +16,7 @@
                     id="search"
                     autocomplete="off"
                     required="required"
+                    placeholder="Use the English"
                 />
                 <div
                     class="searchResult"
@@ -27,6 +30,15 @@
                 required="required"
                 data-mask="+7(___)___-__-__"
             />
+
+            <div class="actionBar">
+                <button class="saveButton" id="saveButton">
+                    Save form
+                </button>
+                <button class="clearButton" id="clearButton">
+                    Clear form
+                </button>
+            </div>
         </div>
 
         <script src="script.js"></script>
